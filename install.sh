@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-git -C ~/.config/nvim pull 2>/dev/null || git clone --depth=1 https://github.com/gc1644/nvim ~/.config/nvim
+
+REPO="https://github.com/gc1644/nvim"
+DEST="$HOME/.config/nvim"
+
+git -C "$DEST" pull 2>/dev/null || git clone --depth=1 "$REPO" "$DEST"
+rm -f "$DEST/install.sh"
