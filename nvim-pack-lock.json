@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "mini.files": {
+      "rev": "fafacfecdd6c5a66bb10d173a749f3c098e84498",
+      "src": "https://github.com/nvim-mini/mini.files"
+    },
+    "vague.nvim": {
+      "rev": "30d2239ecf8adab9bc0d07d42e7a07283879dab6",
+      "src": "https://github.com/vague-theme/vague.nvim"
+    },
+    "vim-be-good": {
+      "rev": "0ae3de14eb8efc6effe7704b5e46495e91931cc5",
+      "src": "https://github.com/ThePrimeagen/vim-be-good"
+    }
+  }
+}
