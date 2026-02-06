@@ -21,15 +21,6 @@ require("vague").setup({
 
 vim.cmd.colorscheme("vague")   
 
-vim.api.nvim_set_hl(0, "MiniFilesDirectory", { fg = "#a0a0c0", italic = false})
-vim.api.nvim_set_hl(0, "MiniFilesFile",      { fg = "#d0d0e0" })
-vim.api.nvim_set_hl(0, "MiniFilesNormal",    { bg = "#18191a", fg = "#c0c0d0" })
-vim.api.nvim_set_hl(0, "MiniFilesCursorLine",{ bg = "#25262a" })
-vim.api.nvim_set_hl(0, "MiniFilesBorder",    { fg = "#404050" })
-vim.api.nvim_set_hl(0, "MiniFilesTitle",     { fg = "#9090b0", bold = true })
-vim.api.nvim_set_hl(0, "MiniFilesTitleFocused", { fg = "#b0b0d0", bold = true })
-vim.api.nvim_set_hl(0, "MiniFilesBorderModified", { fg = "#707090" })
-
 require("mini.files").setup({
   windows = {
     preview = false,
