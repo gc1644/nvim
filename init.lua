@@ -8,26 +8,21 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 
--- Plugins
 vim.pack.add({
   "https://github.com/vague-theme/vague.nvim",
   "https://github.com/nvim-mini/mini.files",
   "https://github.com/ThePrimeagen/vim-be-good",
-
--- LSP support
   "https://github.com/neovim/nvim-lspconfig",
   "https://github.com/williamboman/mason.nvim",
   "https://github.com/williamboman/mason-lspconfig.nvim",
 })
 
--- Theme
 require("vague").setup({
   transparent = false,
   italic = false,
 })
 vim.cmd.colorscheme("vague")
 
--- File explorer
 require("mini.files").setup({
   windows = {
     preview = false,
@@ -48,7 +43,6 @@ vim.keymap.set("n", "<leader>e", function()
   require("mini.files").open(file)
 end, { desc = "Open mini.files" })
 
--- LSP Setup
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = { "basedpyright", "ruff" },
