@@ -10,7 +10,6 @@ vim.opt.signcolumn = "yes"
 vim.pack.add({
   "https://github.com/vague-theme/vague.nvim",
   "https://github.com/nvim-mini/mini.files",
-  "https://github.com/ThePrimeagen/vim-be-good",
 })
 
 require("vague").setup({
