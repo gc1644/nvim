@@ -53,12 +53,11 @@ pcall(telescope.load_extension, "fzf")
 
 local builtin = require("telescope.builtin")
 
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Grep text" })
-vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
-vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help" })
-vim.keymap.set("n", "<leader>e", builtin.find_files, { desc = "Find files" })
-vim.keymap.set("n", "<leader>fn", function()
+vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "Find files" })
+vim.keymap.set("n", "<leader>g", builtin.live_grep, { desc = "Grep text" })
+vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Buffers" })
+vim.keymap.set("n", "<leader>h", builtin.help_tags, { desc = "Help" })
+vim.keymap.set("n", "<leader>n", function()
   require("telescope.builtin").find_files({
     cwd = vim.fn.expand("~/.config"),
   })
